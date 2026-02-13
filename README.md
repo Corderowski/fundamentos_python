@@ -48,3 +48,4 @@ cd 2026C1-G01-FUNDAMENTOS-DE-PYTHON
 
 # Ejecutar un script de prueba
 python 01_Introduccion/hola_mundo.py
+k
