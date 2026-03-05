@@ -2,7 +2,7 @@
 #Lista de notas
 lista_notas = []
 
-with open("notas_ejemplo.csv", encoding="utf-8") as archivo:
+with open("notas_ejemplo.csv") as archivo:
     next(archivo) 
     
     for linea in archivo:
