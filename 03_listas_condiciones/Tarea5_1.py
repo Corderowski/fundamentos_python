@@ -3,7 +3,7 @@
 lista_notas = []
 
 with open("notas_ejemplo.csv", encoding="utf-8") as archivo:
-    next(archivo)  # Saltar encabezado (nombre,nota)
+    next(archivo) 
     
     for linea in archivo:
         datos = linea.strip().split(",")
@@ -58,10 +58,10 @@ while True:
         print(f"Cantidad de estudiantes eximidos: {eximidos:}")
     elif opcion == "3":
         nota_alta = max(lista_notas)
-        print(f"El estudiante con la nota mas alta fue {nombre} con una nota de {nota_alta}")
+        print(f"El estudiante con la nota mas alta fue {nombre} con una nota de {nota_alta:.2f}")
     elif opcion == "4":
         nota_baja = min(lista_notas)
-        print(f"El estudiante con la nota mas baja fue {nombre} con una nota de {nota_baja}")
+        print(f"El estudiante con la nota mas baja fue {nombre} con una nota de {nota_baja:.2f}")
     
     elif opcion == "5":
         print("Cerrando programa...")
