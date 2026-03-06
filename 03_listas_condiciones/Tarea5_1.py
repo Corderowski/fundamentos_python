@@ -48,7 +48,8 @@ while True:
     print("2. Eximidos")
     print("3. Nota mas alta")
     print("4. Nota mas baja")
-    print("5. Salir")
+    print("5. Ingresar datos")
+    print("6. Salir")
 
     opcion = input("Opción: ")
 
@@ -62,8 +63,20 @@ while True:
     elif opcion == "4":
         nota_baja = min(lista_notas)
         print(f"El estudiante con la nota mas baja fue {nombre} con una nota de {nota_baja:.2f}")
-    
+
     elif opcion == "5":
+        nombre = input("Ingrese el nombre del estudiante: ")
+        nota = input("Ingrese la nota: ")
+
+        with open("notas_ejemplo.csv", "a", encoding="utf-8") as archivo:
+            archivo.write(f"\n{nombre},{nota}")
+
+        lista_notas.append(float(nota))
+        promedio = sum(lista_notas) / len(lista_notas)
+
+        print("Estudiante agregado correctamente.")
+
+    elif opcion == "6":
         print("Cerrando programa...")
         break
 
