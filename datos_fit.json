@@ -1,0 +1,20 @@
+{
+    "usuario": {
+        "nombre": "Dereck",
+        "edad": 21,
+        "peso": 130.0,
+        "altura": 188.0
+    },
+    "ejercicios": [
+        {
+            "tipo": "Abdominales",
+            "repeticiones": 60,
+            "peso": 0.0
+        },
+        {
+            "tipo": "Flexiones",
+            "repeticiones": 20,
+            "peso": 0.0
+        }
+    ]
+}
